@@ -10,6 +10,7 @@ public class Empwage {
         int Empwage = 0;
         int DAY = 0;
         int workingdays = 20;
+        int Empworkinghrs=100;
 
         int Empcheck = (int) Math.floor(Math.random() * 10) % 3;
         for (DAY = 1; DAY <= workingdays; DAY++) {
@@ -31,7 +32,7 @@ public class Empwage {
                     Emphrs = 0;
                     break;
             }
-            Empwage = Emphrs * EMP_RATE_PER_HR;
+            Empwage = Emphrs * EMP_RATE_PER_HR* Empworkinghrs;
             System.out.println("Employee wage is:" + Empwage);
         }
     }
